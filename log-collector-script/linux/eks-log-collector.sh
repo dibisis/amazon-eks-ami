@@ -284,7 +284,7 @@ collect() {
 pack() {
   try "archive gathered information"
 
-  tar --create --verbose --gzip --file "${LOG_DIR}"/eks_"${INSTANCE_ID}"_"${CURRENT_TIME}"_"${PROGRAM_VERSION}".tar.gz --directory="${COLLECT_DIR}" . > /dev/null 2>&1
+  tar --create --verbose --gzip --file "${LOG_DIR}"/eks_custom_log.tar.gz --directory="${COLLECT_DIR}" . > /dev/null 2>&1
 
   ok
 }
